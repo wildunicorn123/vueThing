@@ -1,13 +1,12 @@
 <template>
-<router-link :to="{name:'testimonial'}">:
-    <img :src="testimonial.image_url" :alt="testimonial.name">
-    <h3>{{testimonial.name}}</h3>
-    <p>{{testimonial.desc}}</p>
-</router-link>
+<router-link :to="{name:'testimonials'}"></router-link>
+<img :src="testimonials.image_url" :alt="testimonials.name">
+<h3>{{testimonials.name}}</h3>
+<p>{{testimonials.desc}}</p>
 </template>
 <script>
     export default{
-    props:["testimonial"]
+        props:["testimonials"]
 }
 </script>
 <style></style>
