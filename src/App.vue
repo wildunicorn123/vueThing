@@ -1,11 +1,13 @@
 <template>
 <NavBarcomp/>
   <router-view/>
+  <FooterComp/>
 </template>
 <script>
 import NavBarcomp from "./components/NavBar-comp.vue";
+import FooterComp from "./components/Footer-comp.vue"
 export default{
-  components:{NavBarcomp}
+  components:{NavBarcomp, FooterComp}
 }
 </script>
 <style>
@@ -28,4 +30,12 @@ nav{
 .offcanvas{
   background-color:#daaa7a!important;
 }
+body{
+  overflow-x:hidden;
+}
+footer{
+  background:transparent!important;
+  margin-top:none!important;
+}
+
 </style>

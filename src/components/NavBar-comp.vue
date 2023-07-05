@@ -13,19 +13,20 @@
     <div class="offcanvas-body">
     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <router-link class="nav-link active" aria-current="page" to="/">Home</router-link>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <router-link class="nav-link" to="/about">About</router-link>
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 See More:
             </a>
             <ul class="dropdown-menu border-0">
-                <li><a class="dropdown-item" href="#">Testimonials</a></li>
-                <li><a class="dropdown-item" href="#">Projects</a></li>
-                <li><a class="dropdown-item" href="#">Contact Form</a></li>
+                <li><router-link class="dropdown-item" to="/testimonials">Testimonials</router-link></li>
+                <li><router-link class="dropdown-item" to="/projects">Projects</router-link></li>
+                <li><router-link class="dropdown-item" to="/contact">Contact Form</router-link></li>
+                <li><router-link class="dropdown-item" to="/resume"></router-link></li>
             </ul>
             </li>
         </ul>
