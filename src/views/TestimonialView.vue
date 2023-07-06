@@ -1,25 +1,33 @@
 <template>
-<div v-if="testimonials">
-<div v-for="testimonials in testimonials" :key="testimonials.id" :testimonials="testimonials">
-    <img :src="testimonials.image_url" :alt="testimonials.name">
-    {{testimonials.name}}
-    {{testimonials.desc}}
-</div>
-</div>
-<div v-else>Hold-on for a minute...or two...or a few</div>
+<div class="row my-3 justify-content-between gap-3" v-if="testimonials">
+    <div class="testimony-card" v-for="test in testimonials" :key="test.name">
+        <div class="top-wrapper">
+        <h6 class="display-6">{{ test.name }}</h6>
+        <img
+            class="img-fluid rounded-circle"
+            loading="lazy"
+            :src="test.image_url"
+            :alt="test.name"/>
+        </div>
+        <div class="contents">
+        <p class="lead">{{ test.desc }}</p>
+        </div>
+    </div>
+    </div>
 </template>
 <script>
-import Card from '../components/card.vue'
+
 
 export default{
-    computed:{
-        testimonials(){
-            return this.$store.state.testimonials
-        }
+    computed: {
+    testimonials() {
+    return this.$store.state.testimonials;
     },
-    mounted(){
-        this.$store.dispatch('getTestimonials');
-    },
-    components:{Card}
+},
+mounted() {
+    this.$store.dispatch("fetchTestimonials");
+},
 }
 </script>
+<style>
+</style>

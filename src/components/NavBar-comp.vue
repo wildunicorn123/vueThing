@@ -1,7 +1,7 @@
 <template>
 <nav class="navbar fixed-top">
 <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="https://i.postimg.cc/G3DYFgzN/Black-and-White-Monochrome-Tech-Logo.png" class="logo" alt="logo"></a>
+    <router-link class="navbar-brand" to="/"><img src="https://i.postimg.cc/G3DYFgzN/Black-and-White-Monochrome-Tech-Logo.png" class="logo" alt="logo"></router-link>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -13,7 +13,7 @@
     <div class="offcanvas-body">
     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
         <li class="nav-item">
-            <router-link class="nav-link active" aria-current="page" to="/">Home</router-link>
+            <router-link class="nav-link active" to="/">Home</router-link>
         </li>
         <li class="nav-item">
             <router-link class="nav-link" to="/about">About</router-link>
@@ -26,7 +26,7 @@
                 <li><router-link class="dropdown-item" to="/testimonials">Testimonials</router-link></li>
                 <li><router-link class="dropdown-item" to="/projects">Projects</router-link></li>
                 <li><router-link class="dropdown-item" to="/contact">Contact Form</router-link></li>
-                <li><router-link class="dropdown-item" to="/resume"></router-link></li>
+                <li><router-link class="dropdown-item" to="/resume">My Resume</router-link></li>
             </ul>
             </li>
         </ul>
