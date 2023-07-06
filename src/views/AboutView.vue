@@ -19,7 +19,7 @@ Driven by my passion, I embarked on a learning journey to acquire the skills nec
   </div>
 </div>
 </template>
-<style>
+<style scoped>
 .about{
   min-height: 100vh;
   background:url(https://i.postimg.cc/Wzh9Kf8h/Screenshot-2023-07-06-111922.png) no-repeat center center/cover;
@@ -72,8 +72,10 @@ Driven by my passion, I embarked on a learning journey to acquire the skills nec
 }
 .custom-btn:hover {
     background-color:#daaa7a;
-    color:white;
+    color:white!important;
     opacity:1;
 }
-
+*{
+  text-decoration: none;
+}
 </style>

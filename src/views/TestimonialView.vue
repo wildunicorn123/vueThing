@@ -30,4 +30,11 @@ mounted() {
 }
 </script>
 <style>
+img{
+    width:300px;
+    height:200px;
+}
+p{
+    font-size:20px;
+}
 </style>
