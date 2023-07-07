@@ -37,5 +37,10 @@ footer{
   background:transparent!important;
   margin-top:none!important;
 }
-
+*{
+  text-decoration:none!important;
+}
+body{
+  background-color:#daaa7a;
+}
 </style>

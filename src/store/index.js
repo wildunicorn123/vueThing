@@ -6,6 +6,8 @@ export default createStore({
   state: {
     testimonials: null,
     projects:null,
+    skills:null,
+    education:null,
 
   },
   mutations: {
@@ -14,6 +16,12 @@ export default createStore({
     },
     setProjects: (state, projects) => {
       state.projects = projects;
+    },
+    setSkills: (state, skills) => {
+      state.skills = skills;
+    },
+    setEducation: (state, education) => {
+      state.education = education;
     }
   },
   actions: {
@@ -31,6 +39,22 @@ async fetchProjects(context){
     let res = await fetch(fetchdata)
     let{projects} = await res.json()
     context.commit("setProjects", projects)
+  }
+  catch(error){alert(error.message)}
+},
+async fetchSkills(context){
+  try{
+    let resp = await fetch(fetchdata)
+    let{skills} = await resp.json()
+    context.commit("setSkills", skills)
+  }
+  catch(error){alert(error.message)}
+},
+async fetchEducation(context){
+  try{
+    let respo = await fetch(fetchdata)
+    let{education} = await respo.json()
+    context.commit("setEducation", education)
   }
   catch(error){alert(error.message)}
 }

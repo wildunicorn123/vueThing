@@ -79,4 +79,7 @@ body {
   margin: 0;
   min-height: 100vh;
 }
+.card-text{
+  font-size:15px!important;
+}
 </style>

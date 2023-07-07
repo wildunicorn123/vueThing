@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 
 /* add icons to the library */
-library.add(faGithub,faTwitter,faFacebook,faInstagram,faLinkedinIn)
+library.add(faGithub,faTwitter,faFacebook,faInstagram,faLinkedinIn,faEnvelope, faLocationDot, faPhoneVolume, faJs, faHtml5, faCss3, faVuejs, faBootstrap, faDownload)
 
 
 
@@ -23,4 +23,6 @@ createApp(App).use(store).use(router).component('font-awesome-icon', FontAwesome
 
 
 import "bootstrap/dist/js/bootstrap.js";
-import { faFacebook, faGithub, faInstagram, faLinkedinIn, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faBootstrap, faCss3, faFacebook, faGithub, faHtml5, faInstagram, faJs, faLinkedinIn, faTwitter, faVuejs} from "@fortawesome/free-brands-svg-icons";import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faDownload, faLocationDot, faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
+
