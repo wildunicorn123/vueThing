@@ -1,6 +1,6 @@
 <template>
   <div class="top">
-    <h3 class="someee text-white">Some of my older projects...</h3>
+    <h2 class="someee text-white">Some of my older projects...</h2>
   </div>
   <div class="container" v-if="projects">
     <div
@@ -12,7 +12,10 @@
       <img :src="project.image_url" class="card-img-top" :alt="project.name" />
       <div class="card-body">
         <h5 class="card-title ">{{ project.name }}</h5>
-        <p class="card-text">{{ project.desc }}</p>
+        <p class="card-text">Netlify:</p>
+        <a :href=" project.desc "><font-awesome-icon :icon="['far', 'eye']" size="xl" style="color: #daaa7a;" /></a>
+        <p class="card-text">Github:</p>
+        <a :href=" project.text "><font-awesome-icon :icon="['far', 'eye']" size="xl" style="color: black;" /></a>
       </div>
     </div>
   </div>
@@ -48,6 +51,17 @@ export default {
     width:300px;
     height:200px;
 }
+.someee{
+  animation:someee 1s ease-in;
+}
+@keyframes someee{
+  from{
+    transform: translateX(-300px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
 img{
     width:280px;
     height:100px;
@@ -81,5 +95,13 @@ body {
 }
 .card-text{
   font-size:15px!important;
+}
+
+@media(max-width:1705) {
+  .card{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+  }
 }
 </style>
