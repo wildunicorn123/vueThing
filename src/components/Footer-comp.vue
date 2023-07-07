@@ -4,11 +4,11 @@
     <!-- Section: Social media -->
 
     <!-- Facebook -->
-    <router-link class="btn btn-link btn-floating btn-lg text-dark m-1" to="#!" role="button" data-mdb-ripple-color="dark"><font-awesome-icon :icon="['fab', 'facebook']" style="color: #f8f9fc;" /></router-link>
-    <router-link class="btn btn-link btn-floating btn-lg text-dark m-1" to="#!" role="button" data-mdb-ripple-color="dark"><font-awesome-icon :icon="['fab', 'twitter']" style="color: #fafcff;" /></router-link>
-    <router-link class="btn btn-link btn-floating btn-lg text-dark m-1" to="#!" role="button" data-mdb-ripple-color="dark"><font-awesome-icon :icon="['fab', 'instagram']" style="color: #f9fafa;" /></router-link>
-    <router-link class="btn btn-link btn-floating btn-lg text-dark m-1" to="#!" role="button" data-mdb-ripple-color="dark"><font-awesome-icon :icon="['fab','linkedin-in']" style="color: #fcfcfd;" /></router-link>
-    <router-link class="btn btn-link btn-floating btn-lg text-dark m-1" to="#!" role="button" data-mdb-ripple-color="dark"><font-awesome-icon :icon="['fab', 'github']" style="color: #f7f9fc;" /></router-link>
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.facebook.com/login/" role="button" data-mdb-ripple-color="dark"><font-awesome-icon :icon="['fab', 'facebook']" style="color: #f8f9fc;" /></a>
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://twitter.com/i/flow/login" role="button" data-mdb-ripple-color="dark"><font-awesome-icon :icon="['fab', 'twitter']" style="color: #fafcff;" /></a>
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com/accounts/login/" role="button" data-mdb-ripple-color="dark"><font-awesome-icon :icon="['fab', 'instagram']" style="color: #f9fafa;" /></a>
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.linkedin.com/login" role="button" data-mdb-ripple-color="dark"><font-awesome-icon :icon="['fab','linkedin-in']" style="color: #fcfcfd;" /></a>
+    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/" role="button" data-mdb-ripple-color="dark"><font-awesome-icon :icon="['fab', 'github']" style="color: #f7f9fc;" /></a>
 
     <!-- Section: Social media -->
 <!-- Grid container -->
