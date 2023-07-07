@@ -3,7 +3,7 @@
   <h1 class="typing">An Aspiring Web-developer and Full-stack developer.</h1>
 </div>
 </template>
-<style>
+<style scoped>
 @import url("https://fonts.cdnfonts.com/css/inknut-antiqua");
 
 h1 {
