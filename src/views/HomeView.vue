@@ -1,8 +1,32 @@
 <template>
 <div class="hero">
-  <h1 class="typing">An Aspiring Web-developer and Full-stack developer.</h1>
+  <h1 class="typing">{{ message }}</h1>
 </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      message: '',
+      index: 0,
+      speed: 100,
+      text: 'An Aspiring Web-developer and Full-stack developer.'
+    };
+  },
+  mounted() {
+    this.typing();
+  },
+  methods: {
+    typing() {
+      if (this.index < this.text.length) {
+        this.message += this.text.charAt(this.index);
+        this.index++;
+        setTimeout(this.typing, this.speed);
+      }
+    }
+  }
+};
+</script>
 <style scoped>
 @import url("https://fonts.cdnfonts.com/css/inknut-antiqua");
 
@@ -31,34 +55,6 @@ body{
     min-width: 100%;
     max-width:100%;
     z-index: 1;
-}
-.typing
-{
-  text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #ede0d4 0%,
-    #ff4b3e 29%,
-    #972d07 67%,
-    #242331 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-      font-size: 50px;
-}
-
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
 }
 
 </style>

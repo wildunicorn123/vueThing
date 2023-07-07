@@ -14,7 +14,7 @@ Driven by my passion, I embarked on a learning journey to acquire the skills nec
 </div>
 <div class="col mt-3">
   <h3 class="text-black">Find Out More!</h3>
-  <button class="custom-btn"><router-link to="../views/ResumeView.vue"><h4 class="text-black text-decoration-none">Resume</h4></router-link></button>
+  <button class="custom-btn"><router-link to="/resume"><h4 class="text-black text-decoration-none">Resume</h4></router-link></button>
 </div>
   </div>
 </div>
@@ -37,7 +37,7 @@ Driven by my passion, I embarked on a learning journey to acquire the skills nec
   color:antiquewhite;
 }
 .image2{
-  width:320px;
+  width:100%;
   height:380px;
 }
 .me{
